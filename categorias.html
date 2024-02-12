@@ -1,0 +1,30 @@
+<!-- categorias.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Categorias</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cadastro de Categorias</h1>
+
+    <!-- Formulário para cadastrar categorias -->
+    <form id="categoriasForm">
+      <label for="categoria">Categoria:</label>
+      <input type="text" id="categoria" required />
+      <button type="button" onclick="adicionarCategoria()">
+        Adicionar Categoria
+      </button>
+    </form>
+
+    <!-- Visualização das categorias -->
+    <div id="categoriasContainer"></div>
+
+    <button onclick="exibirEscolas(event)">Ir para Cadastro de Escolas</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
