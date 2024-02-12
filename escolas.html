@@ -1,0 +1,43 @@
+<!-- escolas.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Escolas de Samba</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cadastro de Escolas de Samba</h1>
+
+    <!-- Formulário para cadastrar escolas de samba -->
+    <form id="escolaForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required />
+
+      <label for="bandeira">Bandeira (URL ou arquivo):</label>
+      <input type="text" id="bandeira" placeholder="URL da imagem" />
+      <input type="file" id="bandeiraArquivo" accept="image/*" />
+      <button type="button" onclick="carregarBandeira()">
+        Carregar Bandeira
+      </button>
+
+      <label for="historia">História:</label>
+      <textarea id="historia" required></textarea>
+
+      <div id="categoriasContainer"></div>
+
+      <button type="button" onclick="cadastrarEscola()">
+        Cadastrar Escola de Samba
+      </button>
+    </form>
+
+    <button onclick="exibirCategorias(event)">
+      Ir para Cadastro de Categorias
+    </button>
+    <button onclick="exibirApuracao(event)">Ir para Apuração de Notas</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
