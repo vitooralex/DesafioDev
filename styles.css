@@ -3,9 +3,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
+  background-color: aquamarine;
+ 
 }
 
 h1 {
+ 
   color: #333;
 }
 
@@ -27,7 +30,7 @@ textarea {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #333;
   color: white;
   padding: 10px 15px;
   border: none;
